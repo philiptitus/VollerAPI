@@ -1,0 +1,76 @@
+cron:
+  - description: "Run the Instagram scraping task"
+    url: /api/v1/scrape/
+    schedule: every 2 hours
+    target: vollerapi-service
+
+  - description: "Clean Instagram data"
+    url: /api/v1/clean/
+    schedule: every 3 hours
+    target: vollerapi-service
+
+  - description: "Process emerging issues"
+    url: /api/v1/issues/
+    schedule: every 2 hours
+    target: vollerapi-service
+
+  - description: "Process emerging issues count"
+    url: /api/v1/issue-count/
+    schedule: every 8 hours
+    target: vollerapi-service
+
+
+  - description: "Process redundant issues"
+    url: /api/v1/issue-redundant/
+    schedule: every 7 hours
+    target: vollerapi-service
+
+  - description: "Process issues limit"
+    url: /api/v1/issue-limit/
+    schedule: every 24 hours
+    target: vollerapi-service
+
+
+  - description: "Generate course content"
+    url: /api/v1/course/
+    schedule: every 6 hours
+    target: vollerapi-service
+
+
+
+
+
+  - description: "Process predictions"
+    url: /api/v1/predictions/
+    schedule: every 4 hours
+    target: vollerapi-service
+
+
+
+
+
+  - description: "Process predictions count"
+    url: /api/v1/predictions-count/
+    schedule: every 9 hours
+    target: vollerapi-service
+
+
+
+
+  - description: "Process predictions redundant"
+    url: /api/v1/predictions-redundant/
+    schedule: every 3 hours
+    target: vollerapi-service
+
+
+
+  - description: "Process predictions limit"
+    url: /api/v1/predictions-limit/
+    schedule: every 5 hours
+    target: vollerapi-service
+
+
+  - description: "Process finance predictions"
+    url: /api/v1/predictions-limit/
+    schedule: every 6 hours
+    target: vollerapi-service
